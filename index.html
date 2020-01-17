@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="zh">
+    <link rel="icon" href="favicon.ico">
+    <title>物联网简介</title>
+    <script src="js/index.js"></script>
+    <link type="text/css" rel="styleSheet" href="css/animation.css">
+    <link type="text/css" rel="styleSheet" href="css/index.css">
+    <link type="text/css" rel="styleSheet" href="css/global.css">
+</head>
+
+<body>
+    <img src="img/loading.png" alt="" class="loading">
+    <div class="body-all ishide">
+        <a href="https://yuany3721.top"><img src="img/nav-index.png" alt="" id="home"></a>
+        <div class="to-top" onclick="totop()">
+            <img src="img/totop.png" alt="">
+        </div>
+        <!-- 导航 -->
+        <div class="nav-container">
+            <div class="nav-item" onclick="main_index()">
+                <img src="img/nav-index.png" alt="">
+                <span>首页</span>
+            </div>
+            <div class="nav-item" onclick="main_policy()">
+                <img src="img/nav-item1.png" alt="">
+                <span>宏观政策</span>
+            </div>
+            <div class="nav-item" onclick="main_wlw()">
+                <img src="img/nav-item2.png" alt="">
+                <span>物联网+</span>
+            </div>
+            <div class="nav-item" onclick="main_intellegence()">
+                <img src="img/nav-item3.png" alt="">
+                <span>智能+</span>
+            </div>
+            <div class="nav-item" onclick="main_achievement()">
+                <img src="img/nav-item4.png" alt="">
+                <span>成果展</span>
+            </div>
+        </div>
+        <hr>
+        <div class="header">
+            <div class="slogan">
+                <span>万物互联</span>
+                <span>见智 · 见未来</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <br><br>
+            <!-- 特征 -->
+            <h2>特 征</h2>
+            <h3>Characteristic</h3>
+            <div class="float-container">
+                <div class="float-box">
+                    <img src="img/superiority1.png" alt="行业领先技术" class="superiority-img">
+                    <h3>整体感知</h3>
+                    <br>
+                    <span>
+                        RFID、传感器、二维码
+                    </span>
+                    <br>
+                    <span>
+                        随时随地智能感知获取物体信息
+                    </span>
+                    <br>
+                    <span>
+                        信息采集、协同处理、智能组网
+                    </span>
+                </div>
+                <div class="float-box">
+                    <img src="img/superiority3.png" alt="监控" class="superiority-img">
+                    <h3>可靠传输</h3>
+                    <br>
+                    <span>
+                        无线通信网络、5G技术
+                    </span>
+                    <br>
+                    <span>
+                        互联网、无线网络相融合
+                    </span>
+                    <br>
+                    <span>
+                        实时、准确传输信息
+                    </span>
+                </div>
+                <div class="float-box">
+                    <img src="img/superiority4.png" alt="节约成本" class="superiority-img">
+                    <h3>智能处理</h3>
+                    <br>
+                    <span>
+                        云计算、模糊识别
+                    </span>
+                    <br>
+                    <span>
+                        跨地域、跨行业、跨部门
+                        <!-- 的海量数据和信息 -->
+                    </span>
+                    <br>
+                    <span>
+                        智能化监测与控制
+                    </span>
+                </div>
+            </div>
+            <br>
+            <hr>
+
+
+            <!-- 应用 -->
+            <h2>应 用</h2>
+            <h3>Application</h3>
+            <p>
+                物联网的应用领域涉及到方方面面，在工业、农业、环境、交通、物流、安保等基础设施领域的应用，有效的推动了这些方面的智能化发展，使得有限的资源更加合理的使用分配，从而提高了行业效率、效益。
+            </p>
+            <p>
+                在家居、医疗健康、教育、金融与服务业、旅游业等与生活息息相关的领域的应用，从服务范围、服务方式到服务的质量等方面都有了极大的改进，大大的提高了人们的生活质量;
+            </p>
+            <div class="application-container">
+                <div class="app-item1">
+                    <img src="img/application1.jpg" alt="">
+                </div>
+                <div class="app-item2">
+                    <span>颠覆传统</span>
+                    <span>没有做不到<br><br>&nbsp;&nbsp;&nbsp;&nbsp;只有想不到</span>
+                </div>
+                <div class="app-item3">
+                    <span>万物互联</span>
+                    <span>物物相连<br><br>&nbsp;&nbsp;&nbsp;&nbsp;走向未来</span>
+                    <img src="img/application2.jpg" alt="">
+                </div>
+                <div class="app-item4">
+                    <img src="img/application3.jpg" alt="">
+                    <div></div>
+                    <span>创新融合</span>
+                    <span>数字化转型<br><br>&nbsp;&nbsp;&nbsp;&nbsp;把握窗口机遇期</span>
+                </div>
+            </div>
+            <p>
+                在涉及国防军事领域方面，虽然还处在研究探索阶段，但物联网应用带来的影响也不可小觑，大到卫星、导弹、飞机、潜艇等装备系统，小到单兵作战装备，物联网技术的嵌入有效提升了军事智能化、信息化、精准化，极大提升了军事战斗力，是未来军事变革的关键。
+            </p>
+            <hr>
+
+
+            <!-- 关键技术 -->
+            <h2>关 键 技 术</h2>
+            <h3>Key Technology</h3>
+            <div class="float-container">
+                <div class="float-box text-left">
+                    <img src="img/key-tech1.png" alt="行业领先技术" class="superiority-img">
+                    <h3>射频识别技术</h3>
+                    <br>
+                    <span>
+                        射频识别（RFID）的原理是阅读器与标签之间进行非接触式的数据通信，达到识别目标的目的。
+                    </span>
+                    <br>
+                    <span>
+                        RFID 的应用非常广泛，典型应用有动物晶片、汽车晶片防盗器、门禁管制、停车场管制、生产线自动化、物料管理。
+                    </span>
+                </div>
+                <div class="float-box text-left">
+                    <img src="img/key-tech2.png" alt="行业领先技术" class="superiority-img">
+                    <h3>传感网</h3>
+                    <br>
+                    <span>
+                        MEMS，微机电系统，是由微传感器、微执行器、信号处理和控制电路、通讯接口和电源等部件组成的一体化的微型器件系统。
+                    </span>
+                    <br>
+                    <span>
+                        MEMS的目标是把信息的获取、处理和执行集成在一起，组成具有多功能的微型系统，集成于大尺寸系统中，从而大幅度地提高系统的自动化、智能化和可靠性水平。
+                    </span>
+                </div>
+            </div>
+            <div class="float-container">
+                <div class="float-box text-left">
+                    <img src="img/key-tech3.png" alt="监控" class="superiority-img">
+                    <h3>M2M系统框架</h3>
+                    <br>
+                    <span>
+                        M2M是Machine-to-Machine / Man的简称，是一种以机器终端智能交互为核心的、网络化的应用与服务。它将使对象实现智能化的控制。
+                    </span>
+                    <br>
+                    <span>
+                        M2M技术涉及5个重要的技术部分：机器、M2M硬件、通信网络、中间件、应用。基于云计算平台和智能网络，可以依据传感器网络获取的数据进行决策，改变对象的行为进行控制和反馈。
+                    </span>
+                </div>
+                <div class="float-box text-left">
+                    <img src="img/key-tech4.png" alt="节约成本" class="superiority-img">
+                    <h3>云计算</h3>
+                    <br>
+                    <span>
+                        云计算旨在通过网络把多个成本相对较低的计算实体整 合成一个具有强大计算能力的完美系统，并借助先进的商业模式让终端用户可以得到这些强大计算能力的服务。
+                    </span>
+                    <br>
+                    <span>
+                        物联网感知层获取大量数据信息，在经过网络层传输以后，放到一个标准平台上，再利用高性能的云计算对其进行处理，赋予这些数据智能，最终转换成对终端用户有用的信息。
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <p>
+                    互联网ICP备案：<a href="http://www.beian.miit.gov.cn/" target="_blank">
+                        鄂ICP备19027833号-1
+                    </a>
+                    | 公安联网备案：<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003698"
+                        target="_blank">
+                        <img src="img/beian.png" />
+                        鄂公网安备 42011102003698号
+                        </img>
+                </p>
+                <p>
+                    <a href="http://www.hbjubao.com:1888/page/index.do" target="_blank">湖北互联网违法和不良信息举报平台</a>
+                    | 网上有害信息举报专区：<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">
+                        中国互联网违法和不良信息举报中心
+                    </a>
+                </p>
+            </div>
+            <div class="support">lcl提供技术支持</div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

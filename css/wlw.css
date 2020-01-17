@@ -1,0 +1,336 @@
+.container>img {
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: "楷体";
+    color: purple;
+}
+
+.board>span {
+    font-family: "楷体";
+}
+
+.sm-board>span {
+    font-family: "楷体";
+}
+
+@media screen and (min-width: 992px) {
+    .bg {
+        position: relative;
+        /* background-image: url("../img/wlw-bg.jfif"); */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bg::before {
+        content: '';
+        background-image: url('../img/wlw-bg.jfif');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        filter: blur(1px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    .bg {
+        width: 100vw;
+        height: calc(100vw * 768 / 1366);
+    }
+
+    .board,
+    .sm-board {
+        background-color: rgba(255, 255, 255, 0.65);
+        color: purple;
+        border-radius: calc(100vw * 768 / 1366 * 0.35 * 0.05);
+        box-shadow:
+            5px 5px 20px 0 black,
+            -5px -5px 20px 0 white;
+    }
+
+    .board {
+        position: absolute;
+        width: calc(100vw * 0.35);
+        height: calc(100vw * 768 / 1366 * 0.35);
+        top: 17.5vw;
+        left: 5vw;
+    }
+
+    .board>h4 {
+        margin-left: 5%;
+        font-size: 3vw;
+        line-height: calc(100vw * 768 / 1366 * 0.35 * 0.5);
+    }
+
+    .board>span {
+        margin-left: 5%;
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    .sm-board {
+        position: absolute;
+        width: calc(100vw * 0.445);
+        height: calc(100vw * 768 / 1366 * 0.2);
+    }
+
+    .sm-board>img {
+        position: relative;
+        height: 3.5vw;
+        width: 3.5vw;
+        top: calc(100vw * 768 / 1366 * 0.15 / 2 - 3.5vw / 2);
+        right: 5vw;
+    }
+
+    .sm-board>h5 {
+        font-size: 2.5vw;
+        font-weight: 400;
+        display: inline;
+    }
+
+    .sm-board>span {
+        display: block;
+        text-indent: 2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    .board1 {
+        right: 2vw;
+        top: 5%;
+    }
+
+    .board2 {
+        right: 7.5vw;
+        top: 28%;
+    }
+
+    .board3 {
+        right: 2vw;
+        bottom: 28%;
+    }
+
+    .board4 {
+        right: 7.5vw;
+        bottom: 5%;
+    }
+
+    h3 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .bg {
+        width: 1366px;
+        height: 768px;
+    }
+
+    .board,
+    .sm-board {
+        background-color: rgba(255, 255, 255, 0.65);
+        color: purple;
+        border-radius: calc(786px * 0.35 * 0.05);
+        box-shadow:
+            5px 5px 20px 0 black,
+            -5px -5px 20px 0 white;
+    }
+
+    .board {
+        position: absolute;
+        width: calc(1366px * 0.35);
+        height: calc(768px * 0.35);
+        top: 250px;
+        left: 110px;
+    }
+
+    .board>h4 {
+        margin-left: 5%;
+        font-size: 40px;
+        line-height: calc(768px * 0.35 * 0.5);
+    }
+
+    .board>span {
+        margin-left: 5%;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .sm-board {
+        position: absolute;
+        width: calc(1366px * 0.355);
+        height: calc(768px * 0.16);
+    }
+
+    .sm-board>img {
+        position: relative;
+        height: 45px;
+        width: 45px;
+        top: calc(768px * 0.15 / 2 - 45px / 2);
+        right: 60px;
+    }
+
+    .sm-board>h5 {
+        font-size: 30px;
+        font-weight: 400;
+        display: inline;
+    }
+
+    .sm-board>span {
+        display: block;
+        text-indent: 2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 17px;
+    }
+
+    .board1 {
+        right: 70px;
+        top: 10%;
+    }
+
+    .board2 {
+        right: 130px;
+        top: 32.5%;
+    }
+
+    .board3 {
+        right: 70px;
+        bottom: 32.5%;
+    }
+
+    .board4 {
+        right: 130px;
+        bottom: 10%;
+    }
+
+    h3 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bg {
+        position: relative;
+        /* background-image: url("../img/wlw-bg.jfif"); */
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 130vw;
+    }
+
+    .bg::before {
+        content: '';
+        background-image: url('../img/wlw-bg.jfif');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        filter: blur(1px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .board,
+    .sm-board {
+        background-color: rgba(255, 255, 255, 0.65);
+        color: purple;
+        border-radius: calc(100vw * 768 / 1366 * 0.35 * 0.05);
+        box-shadow:
+            5px 5px 20px 0 black,
+            -5px -5px 20px 0 white;
+    }
+
+    .board {
+        position: absolute;
+        width: calc(100vw * 0.35);
+        height: calc(100vw * 768 / 1366 * 0.80);
+        top: 18vw;
+        left: 2vw;
+    }
+
+    .board>h4 {
+        margin-left: 5%;
+        font-size: 8vw;
+        line-height: 15vw;
+    }
+
+    .board>span {
+        display: block;
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+
+    .sm-board {
+        position: absolute;
+        width: 50vw;
+        height: 29vw;
+        right: 2vw;
+    }
+
+    .sm-board>img {
+        position: relative;
+        height: 3.5vw;
+        width: 3.5vw;
+        top: calc(100vw * 768 / 1366 * 0.15 / 2 - 3.5vw / 2);
+        right: 5vw;
+    }
+
+    .sm-board>h5 {
+        font-size: 4vw;
+        font-weight: 400;
+        display: inline;
+    }
+
+    .sm-board>span {
+        display: block;
+        text-indent: 2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3vw;
+    }
+
+    .board1 {
+        top: 2%;
+    }
+
+    .board2 {
+        top: 27%;
+        line-height: 5vw;
+    }
+
+    .board3 {
+        bottom: 27%;
+    }
+
+    .board4 {
+        bottom: 2%;
+    }
+
+    h3 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+
+    .container>img {
+        width: 100%;
+    }
+}

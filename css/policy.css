@@ -1,0 +1,101 @@
+.policy-details {
+    list-style-type: none;
+    margin-left: 2%;
+}
+
+.policy-details>li {
+    margin-top: 22px;
+    font-family: "楷体";
+}
+
+li>a {
+    color: black;
+    text-decoration: none;
+}
+
+li>a:hover {
+    color: purple;
+    text-decoration: underline purple;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+summary {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    details {
+        margin-left: 2%;
+        font-size: 2vw;
+    }
+
+    .policy-more {
+        position: relative;
+        left: 1.5em;
+        top: 0;
+        font-size: 1.5vw;
+        margin: 8px 0;
+    }
+
+    .policy-time,
+    .policy-from {
+        font-size: 1vw;
+        color: gray;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    details {
+        margin-left: 2%;
+        font-size: 1.2vw;
+    }
+
+    .policy-more {
+        position: relative;
+        left: 2em;
+        top: 0;
+        font-size: 0.5vw;
+        margin: 8px 0;
+    }
+
+    .policy-time,
+    .policy-from {
+        font-size: 0.6vw;
+        color: gray;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    details {
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        font-size: 3.5vw;
+    }
+
+    summary {
+        font-size: 4vw;
+    }
+
+    .policy-more {
+        position: relative;
+        left: 80vw;
+        width: 5em;
+        top: 0;
+        font-size: 3vw;
+        margin: 8px 0;
+    }
+
+    .policy-time,
+    .policy-from {
+        font-size: 1.2vw;
+        color: gray;
+        margin-left: 10px;
+    }
+}

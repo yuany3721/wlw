@@ -1,0 +1,275 @@
+.header {
+    background-image: none;
+}
+
+.achievement-banner>img {
+    width: 100%;
+}
+
+li>a {
+    color: black;
+    text-decoration: none;
+}
+
+li>a:hover {
+    color: purple;
+    text-decoration: underline purple;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+.abstract {
+    font-family: "楷体";
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        height: calc(32000vw / 1366) !important;
+    }
+
+    .header>img {
+        width: 100vw;
+        height: calc(32000vw / 1366);
+    }
+
+    .achievement-header>img {
+        float: left;
+        margin: 2%;
+        width: 30%;
+    }
+
+
+    .achievement-header p {
+        padding: 2%;
+        border: rgba(128, 0, 128, 0.314) 2px dashed;
+        text-indent: 2em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        transition: all 0.5s;
+    }
+
+    .achievement-header p:hover {
+        background-color: rgba(128, 0, 128, 0.063);
+    }
+
+    .pic {
+        display: flex;
+    }
+
+    .box {
+        border: purple 1px solid;
+        width: 23%;
+        margin: 1% auto;
+        transition: all 0.3s;
+    }
+
+    .box>img {
+        width: 100%;
+    }
+
+    .box:hover {
+        color: white;
+        /* background-color: rgba(128, 0, 128, 0.314); */
+        /* background-color: rgba(19, 0, 19, 0.502); */
+        background-color: rgba(16, 72, 176, 0.69);
+    }
+
+    .box>span {
+        display: block;
+    }
+
+    .title {
+        text-align: center;
+        position: relative;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        font-family: "楷体";
+        font-weight: bolder;
+    }
+
+    .abstract {
+        text-indent: 2em;
+        margin: 1% 3%;
+        font-size: 0.9vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    .achievement-header p {
+        font-size: x-large;
+    }
+
+
+    .achievement-header {
+        width: 100vw;
+    }
+
+    .achievement-header>img {
+        margin-bottom: 1% !important;
+    }
+
+    strong {
+        font-size: 2.5vw;
+        padding-left: 1em;
+    }
+
+    .achievement-header>ul {
+        margin-top: 2vw;
+        list-style-type: none;
+    }
+
+    ul>li {
+        font-size: 2vw;
+        line-height: 2vw;
+        max-width: 40%;
+    }
+
+    li:before {
+        content: "»» ";
+        font-weight: bolder;
+        color: purple;
+        padding-right: 0.5em;
+    }
+
+    ul>li:nth-child(2n+1) {
+        position: relative;
+        left: 2%;
+    }
+
+    ul>li:nth-child(2n) {
+        position: relative;
+        left: 52%;
+        top: -1.5vw;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .achievement-header p {
+        font-size: x-large;
+    }
+
+    .achievement-header {
+        width: calc(1366px - 4%);
+        margin: 2%;
+    }
+
+    strong {
+        font-size: 2vw;
+    }
+
+    .achievement-container>.title {
+        margin-left: 2%;
+    }
+
+    .achievement-header>ul {
+        margin-top: 2vw;
+        list-style-type: none;
+    }
+
+    ul>li {
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+        max-width: 40%;
+    }
+
+    li:before {
+        content: "»» ";
+        font-weight: bolder;
+        color: purple;
+        padding-right: 0.5em;
+    }
+
+    ul>li:nth-child(2n+1) {
+        position: relative;
+        left: 2%;
+    }
+
+    ul>li:nth-child(2n) {
+        position: relative;
+        left: 52%;
+        top: -1.5vw;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        height: calc(32000vw / 1366) !important;
+    }
+
+    .header>img {
+        width: 100vw;
+        height: calc(32000vw / 1366);
+    }
+
+    .achievement-header>img {
+        display: none;
+    }
+
+    .achievement-header p {
+        padding: 3.5%;
+        border: rgba(128, 0, 128, 0.314) 2px dashed;
+        text-indent: 4em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 3vw;
+        line-height: 6.5vw;
+    }
+
+    strong {
+        font-size: 4vw;
+        padding-left: 1.5em;
+    }
+
+    .achievement-header>ul {
+        margin-top: 2vw;
+        list-style-type: none;
+    }
+
+    ul>li {
+        font-size: 3vw;
+        line-height: 6vw;
+        padding-left: 1em;
+    }
+
+    li:before {
+        content: "»» ";
+        font-weight: bolder;
+        color: purple;
+        padding-right: 0.5em;
+    }
+
+    .box {
+        position: relative;
+        border: purple 2px solid;
+        width: 95%;
+        margin: 1% auto;
+    }
+
+    .box>img {
+        width: calc(95vw * 0.48);
+        height: calc(95vw * 0.40);
+    }
+
+    .title {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-size: 2vw;
+        line-height: 6vw;
+        font-family: "楷体";
+        font-weight: bolder;
+    }
+
+    .abstract {
+        position: absolute;
+        width: calc(95vw * 0.48);
+        right: 0;
+        top: 0;
+        text-indent: 2em;
+        margin: 1% 3%;
+        font-size: 4vw;
+    }
+}

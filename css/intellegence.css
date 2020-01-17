@@ -1,0 +1,283 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 992px) {
+    .banner-box span {
+        position: absolute;
+        top: calc(45% - 60px);
+        margin-top: -30px;
+        width: 30px;
+        height: 120px;
+        line-height: 120px;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .banner-box span:hover {
+        opacity: 1;
+        background-color: rgba(17, 17, 17, 0.188);
+    }
+
+    .banner-box #left {
+        left: 0px;
+    }
+
+    .banner-box #right {
+        right: 0px;
+    }
+
+    .banner-box ol {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        list-style: none;
+    }
+
+    .banner-box ol li {
+        width: 20px;
+        height: 20px;
+        background: rgba(17, 17, 17, 0.188);
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        float: left;
+        margin: 0px 3px;
+        text-align: center;
+    }
+
+    .banner-box ol .active {
+        background: rgba(17, 17, 17, 0.502);
+        color: rgb(255, 112, 255);
+    }
+
+    .row {
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+    }
+
+    .box p {
+        color: rgba(128, 0, 128, 0.5);
+        transition: all 1s ease-in-out;
+    }
+
+    .box p:hover {
+        text-decoration: underline;
+    }
+
+    .box-left {
+        position: absolute;
+        left: 3%;
+    }
+
+    .box-right {
+        position: absolute;
+        right: 3%;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .box img:hover {
+        transform: scale(1.2);
+    }
+
+    .box h4 {
+        margin: 4%;
+        font-size: 25px;
+    }
+
+    .box p {
+        margin: 4%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    .banner-box {
+        position: relative;
+        width: 100vw;
+        height: 53vw;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .banner-box #imgul {
+        width: 100vw;
+        height: 53vw;
+    }
+
+    .banner-box #imgul li {
+        width: 100vw;
+        height: 53vw;
+    }
+
+    .banner-box #imgul li img {
+        width: 100vw;
+        height: 53vw;
+        display: block;
+        float: left;
+    }
+
+
+    .row-1 {
+        top: -10vw;
+        height: 40vw;
+    }
+
+    .row-2 {
+        top: -5vw;
+        height: 40vw;
+    }
+
+    .box {
+        width: 45%;
+        height: 38.5vw;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+        border: white 2px solid;
+        overflow: hidden;
+    }
+
+    .imgbox {
+        width: calc(100vw * 0.45 + 4px);
+        height: calc(53vw * 0.45 + 4px);
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 1366px) {
+    .banner-box {
+        position: relative;
+        width: 1360px;
+        height: 720px;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .banner-box #imgul {
+        width: 1360px;
+        height: 720px;
+    }
+
+    .banner-box #imgul li {
+        width: 1360px;
+        height: 720px;
+    }
+
+    .banner-box #imgul li img {
+        width: 1360px;
+        height: 720px;
+        display: block;
+        float: left;
+    }
+
+    .row-1 {
+        top: -150px;
+        height: 500px;
+    }
+
+    .row-2 {
+        top: -50px;
+        height: 550px;
+    }
+
+    .box {
+        width: 45%;
+        height: 530px;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+        border: white 2px solid;
+        overflow: hidden;
+    }
+
+    .imgbox {
+        width: calc(1360px * 0.45 + 4px);
+        height: calc(840px * 0.45 + 4px);
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner-box span {
+        display: none;
+    }
+
+    .banner-box ol {
+        display: none;
+    }
+
+    .banner-box {
+        position: relative;
+        width: 100vw;
+        height: 53vw;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .banner-box #imgul {
+        width: 100vw;
+        height: 53vw;
+    }
+
+    .banner-box #imgul li {
+        width: 100vw;
+        height: 53vw;
+    }
+
+    .banner-box #imgul li img {
+        width: 100vw;
+        height: 53vw;
+        display: block;
+        float: left;
+    }
+
+    .row {
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .box p {
+        color: rgba(128, 0, 128, 0.5);
+        margin: 4%;
+        font-size: 5vw;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .box img:hover {
+        transform: scale(1.2);
+    }
+
+    .box h4 {
+        margin: 4%;
+        font-size: 6vw;
+    }
+
+    .box {
+        width: 95vw;
+        margin: 1vw auto 3.5vw auto;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+        border: white 8px solid;
+        overflow: hidden;
+    }
+
+    .imgbox {
+        width: calc(95vw - 8px);
+        height: calc(45vw - 8px);
+        margin: auto;
+        overflow: hidden;
+    }
+}
