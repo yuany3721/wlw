@@ -1,186 +1,169 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta lang="zh" />
+        <link rel="icon" href="../favicon.ico" />
+        <title>成果展</title>
+        <script src="../js/index.js"></script>
+        <link type="text/css" rel="styleSheet" href="../css/animation.css" />
+        <link type="text/css" rel="styleSheet" href="../css/global.css" />
+        <link type="text/css" rel="styleSheet" href="../css/achievement.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta lang="zh">
-    <link rel="icon" href="../favicon.ico">
-    <title>成果展</title>
-    <script src="../js/index.js"></script>
-    <link type="text/css" rel="styleSheet" href="../css/animation.css">
-    <link type="text/css" rel="styleSheet" href="../css/global.css">
-    <link type="text/css" rel="styleSheet" href="../css/achievement.css">
-</head>
+    <body>
+        <img src="../img/loading.png" alt="" class="loading" />
+        <div class="body-all ishide">
+            <a href="https://yuany3721.site"><img src="../img/nav-index.png" alt="" id="home" /></a>
+            <div class="to-top" onclick="totop()">
+                <img src="../img/totop.png" alt="" />
+            </div>
+            <div class="header sub-header">
+                <img src="../img/achievement-banner1.jfif" alt="" />
+                <div class="slogan"></div>
+            </div>
+            <!-- 导航 -->
+            <div class="nav-container">
+                <div class="nav-item" onclick="index()">
+                    <img src="../img/nav-index.png" alt="" />
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" onclick="policy()">
+                    <img src="../img/nav-item1.png" alt="" />
+                    <span>宏观政策</span>
+                </div>
+                <div class="nav-item" onclick="wlw()">
+                    <img src="../img/nav-item2.png" alt="" />
+                    <span>物联网+</span>
+                </div>
+                <div class="nav-item" onclick="intellegence()">
+                    <img src="../img/nav-item3.png" alt="" />
+                    <span>智能+</span>
+                </div>
+                <div class="nav-item" onclick="achievement()">
+                    <img src="../img/nav-item4.png" alt="" />
+                    <span>成果展</span>
+                </div>
+            </div>
+            <hr />
 
-<body>
-    <img src="../img/loading.png" alt="" class="loading">
-    <div class="body-all ishide">
-        <a href="https://yuany3721.top"><img src="../img/nav-index.png" alt="" id="home"></a>
-        <div class="to-top" onclick="totop()">
-            <img src="../img/totop.png" alt="">
-        </div>
-        <div class="header sub-header">
-            <img src="../img/achievement-banner1.jfif" alt="">
-            <div class="slogan">
-            </div>
-        </div>
-        <!-- 导航 -->
-        <div class="nav-container">
-            <div class="nav-item" onclick="index()">
-                <img src="../img/nav-index.png" alt="">
-                <span>首页</span>
-            </div>
-            <div class="nav-item" onclick="policy()">
-                <img src="../img/nav-item1.png" alt="">
-                <span>宏观政策</span>
-            </div>
-            <div class="nav-item" onclick="wlw()">
-                <img src="../img/nav-item2.png" alt="">
-                <span>物联网+</span>
-            </div>
-            <div class="nav-item" onclick="intellegence()">
-                <img src="../img/nav-item3.png" alt="">
-                <span>智能+</span>
-            </div>
-            <div class="nav-item" onclick="achievement()">
-                <img src="../img/nav-item4.png" alt="">
-                <span>成果展</span>
-            </div>
-        </div>
-        <hr>
+            <div class="container">
+                <br />
+                <!-- breadcrumb -->
+                <div class="breadcrumb"><span onclick="index()">首页</span> / 成果展</div>
+                <div class="seperator"></div>
+                <div class="achievement-container">
+                    <div class="achievement-header">
+                        <img src="../img/achievement-left.jpg" alt="" />
+                        <p>
+                            自2009年8月我国提出“感知中国”国家战略，物联网发展受到各方广泛关注。几年的发展实践表明，物联网在带动技术创新能力增强、壮大新一代信息技术产业、培育新的经济增长点、促进产业转型升级、提升社会管理和公共服务水平等方面具有重要作用。现阶段，经过前期的市场培育，物联网应用需求全面升级、与传统行业融合更加深入、创新要素空前活跃、标准体系和安全保障建设更为迫切，相关产业形态、各地发展状态、市场环境等都发生了诸多深刻变化，物联网已进入全新发展阶段。
+                        </p>
 
-        <div class="container">
-            <br>
-            <!-- breadcrumb -->
-            <div class="breadcrumb">
-                <span onclick="index()">首页</span> / 成果展
-            </div>
-            <div class="seperator"></div>
-            <div class="achievement-container">
-                <div class="achievement-header">
+                        <span class="title"><strong>典型案例</strong></span>
+                        <ul>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/06/698/">易华录城市数据湖</a></li>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/05/604/">数焓智慧农业物联网平台</a></li>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/05/644/">魔豆科技智能井盖管理系统</a></li>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/05/649/">华大安全可信平台模块</a></li>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/05/677/">港澳大家公共文化服务平台</a></li>
+                            <li><a href="http://www.iotcn.org.cn/2017/12/05/673/">Micro-Free AR热感系统</a></li>
+                        </ul>
+                    </div>
 
-                    <img src="../img/achievement-left.jpg" alt="">
+                    <!-- 成果介绍 -->
+                    <br />
+                    <span class="title"><strong>成果介绍</strong></span>
+                    <br />
+                    <br />
+                    <div class="pic">
+                        <div class="box">
+                            <img src="../img/pic1.jpg" alt="" />
+                            <span class="title"> 公共数字文化服务大数据系统 </span>
+                            <span class="abstract">
+                                公共数字文化服务大数据系统活跃了群众文化生活，推进社会文化发展；深化公共数字文化服务领域的服务创新应用，推动艺术普及服务与高新技术融合发展。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic2.jpg" alt="" />
+                            <span class="title"> 智慧水务云平台 </span>
+                            <span class="abstract">
+                                该系统集计量技术、通讯技术、网络技术、数据技术于一体，实现了计量仪表在精准计量同时可将计量数据通过多种通讯技术传输至计算机获服务器的一整套抄表技术。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic3.jpg" alt="" />
+                            <span class="title"> 地下管网安全监控智能处置系统 </span>
+                            <span class="abstract">
+                                针对城镇地下管网及化粪池气体进行安全监控及智能处置，集实时监测地下管网、超标气体自动处理、地下管线三维可视成像及人工智能视频监控为一体的综合系统。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic4.jpg" alt="" />
+                            <span class="title"> 安全智能锁 </span>
+                            <span class="abstract">
+                                以“安全智能锁”运行信息化系统及相应的服务管理体系为支撑，解决的主要问题是海关对进出口货物在海关监管场所之间转运的严密高效监管需要。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <div class="box">
+                            <img src="../img/pic5.jpg" alt="" />
+                            <span class="title"> 交通综合运行协调与应急指挥平台 </span>
+                            <span class="abstract">
+                                打造智慧交通数据湖，建设权威、全面、综合的交通数据资源中心，全面提升综合交通运行监测与预警能力，增强综合交通管理决策支持能力，改善出行信息服务质量。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic6.jpg" alt="" />
+                            <span class="title"> 物联网一级回收项目 </span>
+                            <span class="abstract">
+                                基于物联网、移动互联网、云计算等技术，搭建信息化智能管理平台，实现数据实时监控、远程状态监控、回收运输路径规划与监控等云服务功能，回收过程可溯源。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic7.jpg" alt="" />
+                            <span class="title"> HPLC+高速无线本地通信技术方案 </span>
+                            <span class="abstract">
+                                融合HPLC载波、高速微功率无线两种通信技术的一种高度冗余、高速率、高稳定性的新型本地通信技术方案，是目前智能电表应用的新一代用电信息采集本地通信方案。
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img src="../img/pic8.jpg" alt="" />
+                            <span class="title"> 中国电信：智慧社区解决方案 </span>
+                            <span class="abstract">
+                                系统基于HINET智能网关，采集设备或者采集现场工控机内的数据，并通过互联网对设备实现远程实时数据采集、设备远程维护、故障远程诊断分析。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="text">
                     <p>
-                        自2009年8月我国提出“感知中国”国家战略，物联网发展受到各方广泛关注。几年的发展实践表明，物联网在带动技术创新能力增强、壮大新一代信息技术产业、培育新的经济增长点、促进产业转型升级、提升社会管理和公共服务水平等方面具有重要作用。现阶段，经过前期的市场培育，物联网应用需求全面升级、与传统行业融合更加深入、创新要素空前活跃、标准体系和安全保障建设更为迫切，相关产业形态、各地发展状态、市场环境等都发生了诸多深刻变化，物联网已进入全新发展阶段。
+                        互联网ICP备案：<a href="http://www.beian.miit.gov.cn/" target="_blank"> 鄂ICP备19027833号-1 </a>
+                        | 公安联网备案：<a
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003698"
+                            target="_blank"
+                        >
+                            <img src="../img/beian.png" />
+                            鄂公网安备 42011102003698号
+                        </a>
                     </p>
-
-                    <span class="title"><strong>典型案例</strong></span>
-                    <ul>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/06/698/">易华录城市数据湖</a></li>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/05/604/">数焓智慧农业物联网平台</a></li>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/05/644/">魔豆科技智能井盖管理系统</a></li>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/05/649/">华大安全可信平台模块</a></li>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/05/677/">港澳大家公共文化服务平台</a></li>
-                        <li><a href="http://www.iotcn.org.cn/2017/12/05/673/">Micro-Free AR热感系统</a></li>
-                    </ul>
+                    <p>
+                        <a href="http://www.hbjubao.com:1888/page/index.do" target="_blank"
+                            >湖北互联网违法和不良信息举报平台</a
+                        >
+                        | 网上有害信息举报专区：<a
+                            href="http://report.12377.cn:13225/toreportinputNormal_anis.do"
+                            target="_blank"
+                        >
+                            中国互联网违法和不良信息举报中心
+                        </a>
+                    </p>
                 </div>
-
-                <!-- 成果介绍 -->
-                <br>
-                <span class="title"><strong>成果介绍</strong></span>
-                <br>
-                <br>
-                <div class="pic">
-                    <div class="box">
-                        <img src="../img/pic1.jpg" alt="">
-                        <span class="title">
-                            公共数字文化服务大数据系统
-                        </span>
-                        <span class="abstract">
-                            公共数字文化服务大数据系统活跃了群众文化生活，推进社会文化发展；深化公共数字文化服务领域的服务创新应用，推动艺术普及服务与高新技术融合发展。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic2.jpg" alt="">
-                        <span class="title">
-                            智慧水务云平台
-                        </span>
-                        <span class="abstract">
-                            该系统集计量技术、通讯技术、网络技术、数据技术于一体，实现了计量仪表在精准计量同时可将计量数据通过多种通讯技术传输至计算机获服务器的一整套抄表技术。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic3.jpg" alt="">
-                        <span class="title">
-                            地下管网安全监控智能处置系统
-                        </span>
-                        <span class="abstract">
-                            针对城镇地下管网及化粪池气体进行安全监控及智能处置，集实时监测地下管网、超标气体自动处理、地下管线三维可视成像及人工智能视频监控为一体的综合系统。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic4.jpg" alt="">
-                        <span class="title">
-                            安全智能锁
-                        </span>
-                        <span class="abstract">
-                            以“安全智能锁”运行信息化系统及相应的服务管理体系为支撑，解决的主要问题是海关对进出口货物在海关监管场所之间转运的严密高效监管需要。
-                        </span>
-                    </div>
-                </div>
-                <div class="pic">
-                    <div class="box">
-                        <img src="../img/pic5.jpg" alt="">
-                        <span class="title">
-                            交通综合运行协调与应急指挥平台
-                        </span>
-                        <span class="abstract">
-                            打造智慧交通数据湖，建设权威、全面、综合的交通数据资源中心，全面提升综合交通运行监测与预警能力，增强综合交通管理决策支持能力，改善出行信息服务质量。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic6.jpg" alt="">
-                        <span class="title">
-                            物联网一级回收项目
-                        </span>
-                        <span class="abstract">
-                            基于物联网、移动互联网、云计算等技术，搭建信息化智能管理平台，实现数据实时监控、远程状态监控、回收运输路径规划与监控等云服务功能，回收过程可溯源。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic7.jpg" alt="">
-                        <span class="title">
-                            HPLC+高速无线本地通信技术方案
-                        </span>
-                        <span class="abstract">
-                            融合HPLC载波、高速微功率无线两种通信技术的一种高度冗余、高速率、高稳定性的新型本地通信技术方案，是目前智能电表应用的新一代用电信息采集本地通信方案。
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="../img/pic8.jpg" alt="">
-                        <span class="title">
-                            中国电信：智慧社区解决方案
-                        </span>
-                        <span class="abstract">
-                            系统基于HINET智能网关，采集设备或者采集现场工控机内的数据，并通过互联网对设备实现远程实时数据采集、设备远程维护、故障远程诊断分析。
-                        </span>
-                    </div>
-                </div>
+                <div class="support">lcl提供技术支持</div>
             </div>
         </div>
-
-        <div class="footer">
-            <div class="text">
-                <p>
-                    互联网ICP备案：<a href="http://www.beian.miit.gov.cn/" target="_blank">
-                        鄂ICP备19027833号-1
-                    </a>
-                    | 公安联网备案：<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003698"
-                        target="_blank">
-                        <img src="../img/beian.png" />
-                        鄂公网安备 42011102003698号
-                    </a>
-                </p>
-                <p>
-                    <a href="http://www.hbjubao.com:1888/page/index.do" target="_blank">湖北互联网违法和不良信息举报平台</a>
-                    | 网上有害信息举报专区：<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">
-                        中国互联网违法和不良信息举报中心
-                    </a>
-                </p>
-            </div>
-            <div class="support">lcl提供技术支持</div>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>

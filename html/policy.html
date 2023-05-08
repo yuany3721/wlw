@@ -1,209 +1,238 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta lang="zh" />
+        <link rel="icon" href="../favicon.ico" />
+        <title>宏观政策</title>
+        <script src="../js/index.js"></script>
+        <link type="text/css" rel="styleSheet" href="../css/animation.css" />
+        <link type="text/css" rel="styleSheet" href="../css/global.css" />
+        <link type="text/css" rel="styleSheet" href="../css/policy.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta lang="zh">
-    <link rel="icon" href="../favicon.ico">
-    <title>宏观政策</title>
-    <script src="../js/index.js"></script>
-    <link type="text/css" rel="styleSheet" href="../css/animation.css">
-    <link type="text/css" rel="styleSheet" href="../css/global.css">
-    <link type="text/css" rel="styleSheet" href="../css/policy.css">
-</head>
+    <body>
+        <img src="../img/loading.png" alt="" class="loading" />
+        <div class="body-all ishide">
+            <a href="https://yuany3721.site"><img src="../img/nav-index.png" alt="" id="home" /></a>
+            <div class="to-top" onclick="totop()">
+                <img src="../img/totop.png" alt="" />
+            </div>
+            <div class="header sub-header">
+                <div class="slogan"></div>
+            </div>
+            <!-- 导航 -->
+            <div class="nav-container">
+                <div class="nav-item" onclick="index()">
+                    <img src="../img/nav-index.png" alt="" />
+                    <span>首页</span>
+                </div>
+                <div class="nav-item" onclick="policy()">
+                    <img src="../img/nav-item1.png" alt="" />
+                    <span>宏观政策</span>
+                </div>
+                <div class="nav-item" onclick="wlw()">
+                    <img src="../img/nav-item2.png" alt="" />
+                    <span>物联网+</span>
+                </div>
+                <div class="nav-item" onclick="intellegence()">
+                    <img src="../img/nav-item3.png" alt="" />
+                    <span>智能+</span>
+                </div>
+                <div class="nav-item" onclick="achievement()">
+                    <img src="../img/nav-item4.png" alt="" />
+                    <span>成果展</span>
+                </div>
+            </div>
+            <hr />
 
-<body>
-    <img src="../img/loading.png" alt="" class="loading">
-    <div class="body-all ishide">
-        <a href="https://yuany3721.top"><img src="../img/nav-index.png" alt="" id="home"></a>
-        <div class="to-top" onclick="totop()">
-            <img src="../img/totop.png" alt="">
+            <div class="container">
+                <br />
+                <!-- breadcrumb -->
+                <div class="breadcrumb"><span onclick="index()">首页</span> / 宏观政策</div>
+                <div class="seperator"></div>
+                <details open>
+                    <summary>国务院</summary>
+                    <ul class="policy-details">
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/01/23/6053/">国务院印发“无废城市”建设试点工作方案</a>
+                            <span class="policy-time">2019-01-23</span>
+                            <span class="policy-from">中国政府网</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2018/09/06/5076/"
+                                >域名不能乱用 国务院：加强政府网站域名管理</a
+                            >
+                            <span class="policy-time">2018-09-06</span>
+                            <span class="policy-from"></span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2018/08/09/4738/">北京等22个城市新设跨境电商综合试验区</a>
+                            <span class="policy-time">2018-08-09</span>
+                            <span class="policy-from"></span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2018/08/07/4717/"
+                                >国务院办公厅印发《关于改革完善医疗卫生行业综合监管制度的指导意见》</a
+                            >
+                            <span class="policy-time">2018-08-07</span>
+                            <span class="policy-from">中国物联网</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2018/05/09/3664/"
+                                >国务院印发《关于推行终身职业技能培训制度的意见》</a
+                            >
+                            <span class="policy-time">2018-05-09</span>
+                            <span class="policy-from">中国政府网</span>
+                        </li>
+                    </ul>
+                    <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gwy/">更多>>></a></div>
+                </details>
+                <details open>
+                    <summary>工信部</summary>
+                    <ul class="policy-details">
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/04/19/6691/"
+                                >一图读懂《2019年IPv6网络就绪专项行动》</a
+                            >
+                            <span class="policy-time">2019-04-19</span>
+                            <span class="policy-from">工信微报</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/12/6358/">第七批减免车船税车型公布</a>
+                            <span class="policy-time">2019-03-12</span>
+                            <span class="policy-from">工信部</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/08/6344/"
+                                >两部委印发《工业互联网综合标准化体系建设指南》</a
+                            >
+                            <span class="policy-time">2019-03-08</span>
+                            <span class="policy-from">工信部</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/04/6289/"
+                                >三部委印发《超高清视频产业发展行动计划（2019-2022年）》</a
+                            >
+                            <span class="policy-time">2019-03-04</span>
+                            <span class="policy-from">工信部</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/02/18/6165/"
+                                >工信部公示2018年工业互联网APP优秀解决方案</a
+                            >
+                            <span class="policy-time">2019-02-18</span>
+                            <span class="policy-from">工信部</span>
+                        </li>
+                    </ul>
+                    <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gxb/">更多>>></a></div>
+                </details>
+                <details open>
+                    <summary>其他部委</summary>
+                    <ul class="policy-details">
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/05/17/6865/"
+                                >七部门联合发布《智能航运发展指导意见》</a
+                            >
+                            <span class="policy-time">2019-05-17</span>
+                            <span class="policy-from">交通运输部</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/04/08/6563/"
+                                >工信部信息中心开启2019年中国互联网企业100强申报</a
+                            >
+                            <span class="policy-time">2019-04-08</span>
+                            <span class="policy-from">工业和信息化部网络安全产业发展中心</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/04/03/6542/"
+                                >国家互联网信息办公室发布《区块链信息服务管理规定》</a
+                            >
+                            <span class="policy-time">2019-04-03</span>
+                            <span class="policy-from">网信办</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/01/23/6061/">经信委印发北京5G产业发展行动方案</a>
+                            <span class="policy-time">2019-01-23</span>
+                            <span class="policy-from">北京市经济和信息化局</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2018/12/18/5842/"
+                                >北京市智能制造关键技术装备供应商推荐目录公示</a
+                            >
+                            <span class="policy-time">2018-12-18</span>
+                            <span class="policy-from">北京市经济和信息化局</span>
+                        </li>
+                    </ul>
+                    <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/qtbw/">更多>>></a></div>
+                </details>
+                <details open>
+                    <summary>相关报道</summary>
+                    <ul class="policy-details">
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/13/6370/">工信部公布1月治理“黑广播”“伪基站”情况</a>
+                            <span class="policy-time">2019-03-13</span>
+                            <span class="policy-from"></span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/06/6313/"
+                                >李克强：移动网络流量平均资费再降低20%以上</a
+                            >
+                            <span class="policy-time">2019-03-06</span>
+                            <span class="policy-from">转载</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/03/04/6287/"
+                                >《超高清视频产业发展行动计划（2019-2022年）》解读</a
+                            >
+                            <span class="policy-time">2019-03-04</span>
+                            <span class="policy-from"></span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/02/28/6274/"
+                                >清理有害信息4437万余条，国家网信办持续推进网络生态专项治理</a
+                            >
+                            <span class="policy-time">2019-02-28</span>
+                            <span class="policy-from">光明日报</span>
+                        </li>
+                        <li>
+                            <a href="http://www.iotcn.org.cn/2019/01/24/6068/"
+                                >陈肇雄出席数字中国产业发展联盟成立大会暨高峰论坛</a
+                            >
+                            <span class="policy-time">2019-01-24</span>
+                            <span class="policy-from">工信部</span>
+                        </li>
+                    </ul>
+                    <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gxb/">更多>>></a></div>
+                </details>
+            </div>
+
+            <div class="footer">
+                <div class="text">
+                    <p>
+                        互联网ICP备案：<a href="http://www.beian.miit.gov.cn/" target="_blank"> 鄂ICP备19027833号-1 </a>
+                        | 公安联网备案：<a
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003698"
+                            target="_blank"
+                        >
+                            <img src="../img/beian.png" />
+                            鄂公网安备 42011102003698号
+                        </a>
+                    </p>
+                    <p>
+                        <a href="http://www.hbjubao.com:1888/page/index.do" target="_blank"
+                            >湖北互联网违法和不良信息举报平台</a
+                        >
+                        | 网上有害信息举报专区：<a
+                            href="http://report.12377.cn:13225/toreportinputNormal_anis.do"
+                            target="_blank"
+                        >
+                            中国互联网违法和不良信息举报中心
+                        </a>
+                    </p>
+                </div>
+                <div class="support">lcl提供技术支持</div>
+            </div>
         </div>
-        <div class="header sub-header">
-            <div class="slogan">
-            </div>
-        </div>
-        <!-- 导航 -->
-        <div class="nav-container">
-            <div class="nav-item" onclick="index()">
-                <img src="../img/nav-index.png" alt="">
-                <span>首页</span>
-            </div>
-            <div class="nav-item" onclick="policy()">
-                <img src="../img/nav-item1.png" alt="">
-                <span>宏观政策</span>
-            </div>
-            <div class="nav-item" onclick="wlw()">
-                <img src="../img/nav-item2.png" alt="">
-                <span>物联网+</span>
-            </div>
-            <div class="nav-item" onclick="intellegence()">
-                <img src="../img/nav-item3.png" alt="">
-                <span>智能+</span>
-            </div>
-            <div class="nav-item" onclick="achievement()">
-                <img src="../img/nav-item4.png" alt="">
-                <span>成果展</span>
-            </div>
-        </div>
-        <hr>
-
-        <div class="container">
-            <br>
-            <!-- breadcrumb -->
-            <div class="breadcrumb">
-                <span onclick="index()">首页</span> / 宏观政策
-            </div>
-            <div class="seperator"></div>
-            <details open>
-                <summary>国务院</summary>
-                <ul class="policy-details">
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/01/23/6053/">国务院印发“无废城市”建设试点工作方案</a>
-                        <span class="policy-time">2019-01-23</span>
-                        <span class="policy-from">中国政府网</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2018/09/06/5076/">域名不能乱用 国务院：加强政府网站域名管理</a>
-                        <span class="policy-time">2018-09-06</span>
-                        <span class="policy-from"></span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2018/08/09/4738/">北京等22个城市新设跨境电商综合试验区</a>
-                        <span class="policy-time">2018-08-09</span>
-                        <span class="policy-from"></span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2018/08/07/4717/">国务院办公厅印发《关于改革完善医疗卫生行业综合监管制度的指导意见》</a>
-                        <span class="policy-time">2018-08-07</span>
-                        <span class="policy-from">中国物联网</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2018/05/09/3664/">国务院印发《关于推行终身职业技能培训制度的意见》</a>
-                        <span class="policy-time">2018-05-09</span>
-                        <span class="policy-from">中国政府网</span>
-                    </li>
-                </ul>
-                <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gwy/">更多>>></a></div>
-            </details>
-            <details open>
-                <summary>工信部</summary>
-                <ul class="policy-details">
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/04/19/6691/">一图读懂《2019年IPv6网络就绪专项行动》</a>
-                        <span class="policy-time">2019-04-19</span>
-                        <span class="policy-from">工信微报</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/12/6358/">第七批减免车船税车型公布</a>
-                        <span class="policy-time">2019-03-12</span>
-                        <span class="policy-from">工信部</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/08/6344/">两部委印发《工业互联网综合标准化体系建设指南》</a>
-                        <span class="policy-time">2019-03-08</span>
-                        <span class="policy-from">工信部</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/04/6289/">三部委印发《超高清视频产业发展行动计划（2019-2022年）》</a>
-                        <span class="policy-time">2019-03-04</span>
-                        <span class="policy-from">工信部</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/02/18/6165/">工信部公示2018年工业互联网APP优秀解决方案</a>
-                        <span class="policy-time">2019-02-18</span>
-                        <span class="policy-from">工信部</span>
-                    </li>
-                </ul>
-                <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gxb/">更多>>></a></div>
-            </details>
-            <details open>
-                <summary>其他部委</summary>
-                <ul class="policy-details">
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/05/17/6865/">七部门联合发布《智能航运发展指导意见》</a>
-                        <span class="policy-time">2019-05-17</span>
-                        <span class="policy-from">交通运输部</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/04/08/6563/">工信部信息中心开启2019年中国互联网企业100强申报</a>
-                        <span class="policy-time">2019-04-08</span>
-                        <span class="policy-from">工业和信息化部网络安全产业发展中心</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/04/03/6542/">国家互联网信息办公室发布《区块链信息服务管理规定》</a>
-                        <span class="policy-time">2019-04-03</span>
-                        <span class="policy-from">网信办</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/01/23/6061/">经信委印发北京5G产业发展行动方案</a>
-                        <span class="policy-time">2019-01-23</span>
-                        <span class="policy-from">北京市经济和信息化局</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2018/12/18/5842/">北京市智能制造关键技术装备供应商推荐目录公示</a>
-                        <span class="policy-time">2018-12-18</span>
-                        <span class="policy-from">北京市经济和信息化局</span>
-                    </li>
-                </ul>
-                <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/qtbw/">更多>>></a></div>
-            </details>
-            <details open>
-                <summary>相关报道</summary>
-                <ul class="policy-details">
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/13/6370/">工信部公布1月治理“黑广播”“伪基站”情况</a>
-                        <span class="policy-time">2019-03-13</span>
-                        <span class="policy-from"></span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/06/6313/">李克强：移动网络流量平均资费再降低20%以上</a>
-                        <span class="policy-time">2019-03-06</span>
-                        <span class="policy-from">转载</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/03/04/6287/">《超高清视频产业发展行动计划（2019-2022年）》解读</a>
-                        <span class="policy-time">2019-03-04</span>
-                        <span class="policy-from"></span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/02/28/6274/">清理有害信息4437万余条，国家网信办持续推进网络生态专项治理</a>
-                        <span class="policy-time">2019-02-28</span>
-                        <span class="policy-from">光明日报</span>
-                    </li>
-                    <li>
-                        <a href="http://www.iotcn.org.cn/2019/01/24/6068/">陈肇雄出席数字中国产业发展联盟成立大会暨高峰论坛</a>
-                        <span class="policy-time">2019-01-24</span>
-                        <span class="policy-from">工信部</span>
-                    </li>
-                </ul>
-                <div class="policy-more"><a href="http://www.iotcn.org.cn/hgzc/gxb/">更多>>></a></div>
-            </details>
-        </div>
-
-        <div class="footer">
-            <div class="text">
-                <p>
-                    互联网ICP备案：<a href="http://www.beian.miit.gov.cn/" target="_blank">
-                        鄂ICP备19027833号-1
-                    </a>
-                    | 公安联网备案：<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102003698"
-                        target="_blank">
-                        <img src="../img/beian.png" />
-                        鄂公网安备 42011102003698号
-                    </a>
-                </p>
-                <p>
-                    <a href="http://www.hbjubao.com:1888/page/index.do" target="_blank">湖北互联网违法和不良信息举报平台</a>
-                    | 网上有害信息举报专区：<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">
-                        中国互联网违法和不良信息举报中心
-                    </a>
-                </p>
-            </div>
-            <div class="support">lcl提供技术支持</div>
-        </div>
-    </div>
-</body>
-
-
+    </body>
 </html>
